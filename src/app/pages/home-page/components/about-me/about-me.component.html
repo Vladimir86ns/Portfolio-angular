@@ -1,21 +1,22 @@
-<div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-          <img class="img-thumbnail rounded-circle" [src]="picture" alt="Generic placeholder image">
-          <h3 class="text-center">Who is this guy?</h3>
-          <p>
-              I'm the Full Stack Developer for Vivify Ideas in Serbia, and,
-              I have serious passion for JavaScript and PHP.
-          </p>
-      </div>
-      <div class="col-sm-8">
-        <div *ngFor="let skill of skills">
-            <div class="row">
-              <p class="text-white text-center" style="background-color: #2dedb3; width: 15%">{{ skill.name | uppercase }}</p>
-              <p style="background-color:#93edd1" [style.width]="skill.skillLevel+'%'"></p>
-              <p class="text-right" style="background-color: #e1f2ec" [style.width]="skill.missingSkills+'%'">{{ skill.skillLevel + 10 }} %</p>
-            </div>
+<div class="container mt-5 mb-5">
+  <h1 class="text-center mb-5">ABOUT ME</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="img-thumbnail rounded-circle" [src]="picture" alt="Generic placeholder image">
+      <h3 class="text-center">Who is this guy?</h3>
+      <p style="font-size: 18px">
+        I'm the Full Stack Developer for <a href="https://www.vivifyideas.com/">Vivify Ideas</a> in Serbia, and,
+        I have serious passion for JavaScript and PHP.
+      </p>
+    </div>
+    <div class="col-sm-8">
+      <div *ngFor="let skill of skills">
+        <div class="row">
+          <p class="text-white text-center" style="background-color: #2dedb3; width: 15%">{{ skill.name | uppercase }}</p>
+          <p style="background-color:#93edd1" [style.width]="skill.skillLevel+'%'"></p>
+          <p class="text-right" style="background-color: #e1f2ec" [style.width]="skill.missingSkills+'%'">{{ skill.skillLevel + 10 }} %</p>
         </div>
+      </div>
     </div>
   </div>
 </div>
