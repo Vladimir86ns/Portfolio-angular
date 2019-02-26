@@ -1,0 +1,33 @@
+
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="row">
+      <div class="col-md-6 px-0 col-8">
+          <h1 class="display-4 font-italic">As you already know, who I am :)</h1>
+          <p class="lead my-3">So languages which I speak is PHP and JavaScript</p>
+          <p>
+              The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.
+
+              Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.
+              
+              My clients have found that launching with a well considered and well developed front-end has saved them time and money and makes for a product that is consistently of high quality.
+          </p>
+          <p *ngIf="!isOpen" class="lead mb-0"><button class="text-white font-weight-bold" (click)="moreAboutMe()">More about me ...</button></p>
+        </div>
+        <div class="col-4">
+          <img class="img-thumbnail rounded-circle float-right" [src]="picture" alt="Generic placeholder image">
+        </div>
+        <div>
+            <div *ngIf="isOpen">
+                <p>
+                    The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.
+    
+                    Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.
+                    
+                    My clients have found that launching with a well considered and well developed front-end has saved them time and money and makes for a product that is consistently of high quality.
+               
+                </p>
+                <p *ngIf="isOpen" class="lead mb-0"><button class="text-white font-weight-bold" (click)="moreAboutMe()">Less about me ...</button></p>
+              </div>
+        </div>
+    </div>
+  </div>
