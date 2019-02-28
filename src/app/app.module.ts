@@ -9,6 +9,7 @@ import { HelloComponent } from './pages/home-page/components/hello/hello.compone
 import { AboutMeComponent } from './pages/home-page/components/about-me/about-me.component';
 import { AboutMePageComponent } from './pages/about-me-page/about-me-page.component';
 import { ProgrammingPicturesComponentComponent } from './pages/about-me-page/components/programming-pictures-component/programming-pictures-component.component';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProgrammingPicturesComponentComponent } from './pages/about-me-page/com
     HelloComponent,
     AboutMeComponent,
     AboutMePageComponent,
-    ProgrammingPicturesComponentComponent
+    ProgrammingPicturesComponentComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { AboutMePageComponent } from './pages/about-me-page/about-me-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
@@ -7,7 +8,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: '/home-page', pathMatch: 'full' },
   { path: 'home-page', component: HomePageComponent },
-  { path: 'about-me-page', component: AboutMePageComponent }
+  { path: 'about-me-page', component: AboutMePageComponent },
+  { path: 'projects-page', component: ProjectsPageComponent }
 ];
 
 @NgModule({
