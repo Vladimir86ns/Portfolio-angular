@@ -1,0 +1,114 @@
+// @import '~perfect-scrollbar/css/perfect-scrollbar.css';
+// @import '~@swimlane/ngx-datatable/release/index.css';
+// @import '~@swimlane/ngx-datatable/release/themes/material.css';
+// @import '~@swimlane/ngx-datatable/release/assets/icons.css';
+// @import '~ngx-toastr/toastr.css';
+// @import 'themes/index';
+@import 'variables';
+@import 'themes/themes';
+@import "node_modules/bootstrap/scss/bootstrap";
+// @import "../iconsmind/iconsmind.css";
+@import "~eva-icons/style/eva-icons.css";
+@import 'globals/globals';
+
+/*
+Font Size;
+.t-fz-i; i = 1,2, ... 10;
+(rem);
+
+Font Weight
+.t-fw-i; i = 100, 200, ... 900;
+
+Margins
+.t-m-i; i = 1, 2, ... 10; (rem);
+.t-mt-i;
+.t-mr-i;
+.t-mb-i;
+.t-ml-i;
+
+Paddings
+.t-p-i; i = 1, 2, ... 10; (rem);
+.t-pt-i;
+.t-pr-i;
+.t-pb-i;
+.t-pl-i;
+
+Height
+.t-height-i; i = 100, 200, ... 1000; (px);
+
+Width
+.t-width-i; i = 100, 200, ... 1000; (px);
+
+Text align
+t-ta-i; i = left, right, center
+
+*/
+
+//================ Common Styles =============
+// html,
+// body {
+//   margin: 0;
+//   padding: 0;
+//   width: 100%;
+//   height: 100%;
+//   font-family: $font-family-base;
+//   font-size: 14px;
+//   font-weight: 400;
+//   line-height: 1.5;
+// //   color: $foreground;
+// //   -webkit-tap-highlight-color: mat-color($primary);
+//   -webkit-touch-callout: none;
+//   min-height: 100%;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+[tabindex='-1']:focus {
+    outline: none;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 0;
+}
+
+select,
+button,
+textarea,
+input {
+    vertical-align: baseline;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    &[dir=rtl],
+    &[dir=ltr] {
+        unicode-bidi: embed
+    }
+}
+
+bdo[dir=rtl] {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+bdo[dir=ltr] {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
