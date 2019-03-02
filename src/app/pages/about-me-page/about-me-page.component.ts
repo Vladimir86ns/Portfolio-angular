@@ -8,6 +8,8 @@ export class AboutMePageComponent implements OnInit {
 
   public picture = "../../../assets/images/vladimir-grujin2.png";
   public isOpen = false;
+  public helloWorld = "<p>Hello World</p>";
+  public years = new Date().getFullYear() - 1986;
 
   constructor() { }
 
@@ -15,8 +17,6 @@ export class AboutMePageComponent implements OnInit {
   }
 
   public moreAboutMe() {
-    console.log('USAO')
     this.isOpen =! this.isOpen;
-    console.log(this.isOpen)
   }
 }

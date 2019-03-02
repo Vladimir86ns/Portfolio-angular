@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsPageComponent implements OnInit {
 
-  salariumPicturePath = '../../../assets/images/salarium.png';
-  merididanPicturePath = '../../../assets/images/meridian.png';
+  salariumPicturePath = '../../../assets/images/projects/salarium-1.png';
+  merididanPicturePath = '../../../assets/images/projects/meridian-1.png';
+  nextProjectsPicturePath = '../../../assets/images/projects/project-1.png';
+
   constructor() { }
 
   ngOnInit() {

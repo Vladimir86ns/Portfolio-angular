@@ -1,34 +1,50 @@
-
-  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-    <div class="row">
-      <div class="col-8">
-          <h1 class="display-4 font-italic">As you already know, who I am :)</h1>
-          <p class="lead my-3">So languages which I speak is PHP and JavaScript</p>
-          <p>
-              The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.
-
-              Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.
-              
-              My clients have found that launching with a well considered and well developed front-end has saved them time and money and makes for a product that is consistently of high quality.
+<section id="intro-wrap" class="intro-eight-Wrap text-white  text-center">
+  <div class="container">
+    <h1 class="text-center text-white text-center font-weight-bold font-italic t-shadow text-30">As you already know,
+      who I am :)</h1>
+    <p class="text-center text-center font-weight-bold font-italic t-shadow text-30">So languages which I speak is PHP
+      and JavaScript</p>
+    <p class="text-22 mb-4">
+        I start making mobile games 5 years ago in Unity, then I fall in love with programming. 
+        Since I wrote my first words {{ helloWorld }}, 
+        I never stop learning and improving my self. 
+        In last few years, I also start making websites, and mobile applications.
+    </p>
+    <p 
+      *ngIf="!isOpen"
+      class="lead mb-0">
+      <button 
+        class="font-weight-bold btn btn-outline-white btn-lg pl-5 pr-5 pb-2  mr-2 mb-4 text-uppercase"
+        (click)="moreAboutMe()">
+        More about me ...
+      </button>
+    </p>
+  </div>
+  <div>
+    <div *ngIf="isOpen">
+      <p class="text-20 mb-4">
+          <p class="text-22 mb-4">I live in Serbia, and I from Novi Sad, and I am {{ years }} years old.
+          Also I am father of one girl Nikolina and I have beautiful wife Danijela.
           </p>
-          <p *ngIf="!isOpen" class="lead mb-0"><button class="text-white font-weight-bold" (click)="moreAboutMe()">More about me ...</button></p>
-        </div>
-        <div class="col-4">
-          <img class="img-thumbnail rounded-circle float-right" [src]="picture" alt="Generic placeholder image">
-        </div>
-        <div>
-            <div *ngIf="isOpen">
-                <p>
-                    The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.
-    
-                    Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.
-                    
-                    My clients have found that launching with a well considered and well developed front-end has saved them time and money and makes for a product that is consistently of high quality.
-               
-                </p>
-                <p *ngIf="isOpen" class="lead mb-0"><button class="text-white font-weight-bold" (click)="moreAboutMe()">Less about me ...</button></p>
-              </div>
-        </div>
+          <p class="text-22 mb-4">
+            Currently, I am working for Vivify Ideas where I have the opportunity to learn, 
+            improve my self by my co-workers and working on big projects and learning work 
+            in a team. I also always looking for new challenges where I can implement my knowledge and experiences on new projects
+
+          </p>
+      <!-- <p 
+        *ngIf="isOpen"
+        class="lead mb-0">
+        <button
+          class="font-weight-bold btn btn-outline-white btn-lg pl-5 pr-5 pb-2  mr-2 mb-4 text-uppercase"
+          (click)="moreAboutMe()">
+          Less about me ...
+        </button>
+      </p> -->
     </div>
   </div>
-  <app-programming-pictures-component></app-programming-pictures-component>
+  <div class="overlay">
+  </div>
+</section>
+
+<app-programming-pictures-component></app-programming-pictures-component>

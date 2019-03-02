@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 export class HelloComponent implements OnInit {
 
   public picture = "../../../../../assets/images/vladimir-grujin.png";
+  public picture2 = "../../../../../assets/images/vladimir-grujin2.png";
 
   constructor() { }
 

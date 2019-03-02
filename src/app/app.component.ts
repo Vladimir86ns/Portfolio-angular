@@ -7,6 +7,7 @@ import { Router, NavigationEnd } from "@angular/router";
 })
 export class AppComponent {
   title = 'Portfolio-angular';
+  backgroundColor = "landing-gradient-quepal";
 
   constructor(private router: Router) {}
 
