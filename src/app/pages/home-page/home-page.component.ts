@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   public picture = "../../../assets/images/vladimir-grujin.png";
+  backgroundColor = "landing-gradient-quepal";
+  showCustomizer = false;
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  changeBg(colorName) {
+    this.backgroundColor = "landing-" + colorName;
   }
-
+  toggleCustomizer() {
+    this.showCustomizer = !this.showCustomizer;
+  }
 }
