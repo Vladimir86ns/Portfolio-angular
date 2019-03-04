@@ -17,6 +17,7 @@ import { ProjectsPageComponent } from './pages/projects-page/projects-page.compo
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { BlogPageComponentHeaderComponent } from './pages/blog-page/components/blog-page-component-header/blog-page-component-header.component';
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.
     ProjectsPageComponent,
     BlogPageComponent,
     BlogPageComponentHeaderComponent,
-    ContactUsPageComponent
+    ContactUsPageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,

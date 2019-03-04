@@ -9,7 +9,8 @@ import { NgForm } from '@angular/forms';
   animations: [SharedAnimations]
 })
 export class ContactUsPageComponent implements OnInit {
-  isContactPage = true;
+  showNavBarBackgroundColor = true;
+  
   private formValues = {
     'email': null,
     'name': null,

@@ -1,3 +1,4 @@
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { AboutMePageComponent } from './pages/about-me-page/about-me-page.component';
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'about-me-page', component: AboutMePageComponent },
   { path: 'projects-page', component: ProjectsPageComponent },
   { path: 'blog', component: BlogPageComponent },
-  { path: 'contact-us', component: ContactUsPageComponent }
+  { path: 'contact-us', component: ContactUsPageComponent },
+  { path: '**', component: NotFoundPageComponent }
 ];
 
 @NgModule({
