@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
   animations: [SharedAnimations]
 })
 export class ContactUsPageComponent implements OnInit {
+  isContactPage = true;
   private formValues = {
     'email': null,
     'name': null,
