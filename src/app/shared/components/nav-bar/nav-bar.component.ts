@@ -11,7 +11,8 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 export class NavBarComponent implements OnInit {
   isFixed;
   public isCollapsed = true;
-  @Input() isContactPage: boolean = false;
+
+@Input() showNavBarBackgroundColor: boolean = false;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -19,8 +20,8 @@ export class NavBarComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    if (this.isContactPage) {
-      this.isFixed = this.isContactPage;
+    if (this.showNavBarBackgroundColor) {
+      this.isFixed = this.showNavBarBackgroundColor;
     }
   }
   
