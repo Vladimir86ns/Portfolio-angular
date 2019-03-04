@@ -1,6 +1,7 @@
-import { Component, OnInit, HostListener, HostBinding, Inject } from '@angular/core';
+import { Component, OnInit, HostListener, HostBinding, Inject, Input } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 import { WINDOW_PROVIDERS, WINDOW } from '../../../helpers/window.helpers';
+import {Router, ActivatedRoute, Params} from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,12 +11,19 @@ import { WINDOW_PROVIDERS, WINDOW } from '../../../helpers/window.helpers';
 export class NavBarComponent implements OnInit {
   isFixed;
   public isCollapsed = true;
+  @Input() isContactPage: boolean = false;
+
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    // @Inject(WINDOW) private window: Window
+    // @Inject(WINDOW) private window: Window,
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.isContactPage) {
+      this.isFixed = this.isContactPage;
+    }
+  }
+  
   @HostListener("window:scroll", [])
   onWindowScroll() {
     const offset =
