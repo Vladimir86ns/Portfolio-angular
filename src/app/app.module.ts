@@ -4,8 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NguCarouselModule } from '@ngu/carousel';
 import { FormsModule }   from '@angular/forms';
-
+import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
+
+import { ServerService } from './server.service';
+
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -40,9 +43,10 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     HttpClientModule,
     NgbModule,
     NguCarouselModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,4 @@
+import { ServerService } from './../../server.service';
 import { SharedAnimations } from 'src/app/shared/animations/shared-animations';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -18,10 +19,15 @@ export class ContactUsPageComponent implements OnInit {
     'message': null,
 
   };
- staticAlertClosed : true;
+
+  staticAlertClosed : true;
   error = null;
   success: any = null;
-  constructor() {}
+
+
+  constructor(private serverService: ServerService) {
+
+  }
 
   ngOnInit() {}
 
@@ -30,6 +36,11 @@ export class ContactUsPageComponent implements OnInit {
     this.formValues.name = form.value.name;
     this.formValues.subject = form.value.subject;
     this.formValues.message = form.value.message;
-    this.success=true;
+
+    this.serverService.storeServers(this.formValues)
+      .subscribe(
+        () => this.success = true,
+        () => console.log()
+      )
   }
 }
