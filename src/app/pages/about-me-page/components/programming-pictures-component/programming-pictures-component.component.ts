@@ -19,6 +19,8 @@ export class ProgrammingPicturesComponentComponent implements OnInit {
   mySqlPicturePath = '../../../../../assets/images/languages-frameworks/mysql-1.png';
   mongoPicturePath = '../../../../../assets/images/languages-frameworks/mongodb-1.png';
 
+  javascriptYearExperience = new Date().getFullYear() - 2017;
+
   constructor() { }
 
   ngOnInit() {

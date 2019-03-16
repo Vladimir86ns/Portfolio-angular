@@ -1,3 +1,4 @@
+import { JavascriptComponent } from './pages/skills-page/javascript/javascript.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'projects-page', component: ProjectsPageComponent },
   { path: 'blog', component: BlogPageComponent },
   { path: 'contact-us', component: ContactUsPageComponent },
+  { path: 'javascript', component: JavascriptComponent },
   { path: '**', component: NotFoundPageComponent }
 ];
 

@@ -21,6 +21,25 @@ import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { BlogPageComponentHeaderComponent } from './pages/blog-page/components/blog-page-component-header/blog-page-component-header.component';
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { JavascriptComponent } from './pages/skills-page/javascript/javascript.component';
+import { VariableAndStringComponent } from './pages/skills-page/javascript/components/javascript-basic/variable-and-string/variable-and-string.component';
+
+import { ClipboardModule } from 'ngx-clipboard';
+
+import { HighlightModule } from 'ngx-highlightjs';
+import javascript from 'highlight.js/lib/languages/javascript';
+import { AboutJavascriptComponent } from './pages/skills-page/javascript/components/about-javascript/about-javascript.component';
+import { NumbersComponent } from './pages/skills-page/javascript/components/javascript-basic/numbers/numbers.component';
+/**
+ * Import every language you wish to highlight here
+ * NOTE: The name of each language must match the file name its imported from
+ */
+export function highlightLanguages() {
+  return [
+    {name: 'javascript', func: javascript},
+  ];
+}
+
 
 @NgModule({
   declarations: [
@@ -35,7 +54,11 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     BlogPageComponent,
     BlogPageComponentHeaderComponent,
     ContactUsPageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    JavascriptComponent,
+    VariableAndStringComponent,
+    AboutJavascriptComponent,
+    NumbersComponent
   ],
   imports: [
     BrowserModule,
@@ -44,9 +67,15 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     NgbModule,
     NguCarouselModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ClipboardModule,
+    HighlightModule.forRoot({
+      languages: highlightLanguages
+    })
   ],
-  providers: [ServerService],
+  providers: [
+    ServerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

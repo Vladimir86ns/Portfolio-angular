@@ -1,98 +1,174 @@
 <div class="container">
   <div class="row text-center">
-      <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='javascriptPicturePath' class="rounded-sm mt-1"  width="300" height="300">
-      <h2>JavaScript</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
-        ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-        <button class="btn btn-gradient">More...</button>
-      </p>
-    </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='phpPicturePath' class="rounded-sm mt-1" width="300" height="300">
-      <h2>PHP</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
-        ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
-        <button class="btn btn-gradient">More...</button></p>
+
+    <div class="service-wrap col-md-6 col-lg-6 col-sm-6">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img [src]='javascriptPicturePath' class="rounded-sm mt-1">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">JavaScript</h2>
+          <p class="card-text">JavaScript is my favorite languages, Most of project client side are made in JS.</p>
+        </div>
+        <div class="card-footer pl-3">
+          <button routerLink="/javascript" class="btn btn-gradient">More...</button>
+        </div>
       </div>
+    </div>
+
+    <div class="service-wrap col-md-6 col-lg-6 col-sm-6">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img [src]='phpPicturePath' class="rounded-sm mt-1" width="300" height="300">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">PHP</h2>
+          <p class="card-text">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id
+            nibh ultricies vehicula
+            ut id elit.</p>
+        </div>
+        <div class="card-footer pl-3">
+          <button class="btn btn-gradient">More...</button>
+        </div>
+      </div>
+    </div>
+
   </div>
+  <!-- End of js and php -->
+
   <div class="row text-center">
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='htmlPicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>HTML</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="htmlPicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">HTML</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='cssPicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>CSS</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="cssPicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">CSS</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='nodePicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>NodeJS</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="nodePicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">NodeJS</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='reactPicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>React</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="reactPicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">React</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- end of one row -->
+
   <div class="row text-center">
-    <div class="col" style="border: 1px solid; border-radius: 15px;">
-      <img [src]='vuePicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>Vue</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="vuePicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">Vue</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='angularPicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>Angular</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="angularPicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">Angular</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='laravelPicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>Laravel</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="laravelPicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">Laravel</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='lumenPicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>Lumen</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="lumenPicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">Lumen</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- end one row -->
+
   <div class="row text-center">
+    
     <div class="col" style="border: 0px solid; border-radius: 15px; margin: 7px">
     </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='mongoPicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>MongoDB</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="mongoPicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">MongoDB</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
-    <div class="col" style="border: 1px solid; border-radius: 15px; margin: 7px">
-      <img [src]='mySqlPicturePath' class="rounded-sm mt-1" width="200" height="200">
-      <h2>MySQL</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh...
-          <button class="btn btn-gradient">More...</button>
-      </p>
+
+    <div class="service-wrap col-md-6 col-lg-3 col-sm-12">
+      <div class="card o-hidden mb-4">
+        <div class="card-header p-0 text-center ">
+          <img class="img-responsive" [src]="mySqlPicturePath">
+        </div>
+        <div class="card-body">
+          <h2 class="card-title text-capitalize font-weight-bold ">MySQL</h2>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
     </div>
+
     <div class="col" style="border: 0px solid; border-radius: 15px; margin: 7px">
     </div>
   </div>
