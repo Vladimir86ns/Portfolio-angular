@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogPageComponent },
   { path: 'contact-us', component: ContactUsPageComponent },
   { path: 'javascript', component: JavascriptComponent },
-  { path: 'project/detail', component: ProjectDetailComponent },
+  { path: 'project/detail/:name', component: ProjectDetailComponent },
   { path: '**', component: NotFoundPageComponent }
 ];
 
