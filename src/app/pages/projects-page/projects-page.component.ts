@@ -15,4 +15,8 @@ export class ProjectsPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  openDetail(project) {
+    console.log(project)
+  }
+
 }
