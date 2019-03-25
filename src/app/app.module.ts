@@ -30,6 +30,10 @@ import { HighlightModule } from 'ngx-highlightjs';
 import javascript from 'highlight.js/lib/languages/javascript';
 import { AboutJavascriptComponent } from './pages/skills-page/javascript/components/about-javascript/about-javascript.component';
 import { NumbersComponent } from './pages/skills-page/javascript/components/javascript-basic/numbers/numbers.component';
+import { ProjectDetailComponent } from './pages/projects-page/project-detail/project-detail.component';
+import { ProjectDetailSalariumComponent } from './pages/projects-page/project-detail/project-detail-salarium/project-detail-salarium.component';
+import { ProjectDetailMeridianComponent } from './pages/projects-page/project-detail/project-detail-meridian/project-detail-meridian.component';
+
 /**
  * Import every language you wish to highlight here
  * NOTE: The name of each language must match the file name its imported from
@@ -58,7 +62,10 @@ export function highlightLanguages() {
     JavascriptComponent,
     VariableAndStringComponent,
     AboutJavascriptComponent,
-    NumbersComponent
+    NumbersComponent,
+    ProjectDetailComponent,
+    ProjectDetailSalariumComponent,
+    ProjectDetailMeridianComponent
   ],
   imports: [
     BrowserModule,

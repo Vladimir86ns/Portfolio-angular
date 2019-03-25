@@ -6,8 +6,10 @@ import { AboutMePageComponent } from './pages/about-me-page/about-me-page.compon
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ProjectDetailComponent } from './pages/projects-page/project-detail/project-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home-page', pathMatch: 'full' },
@@ -17,6 +19,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogPageComponent },
   { path: 'contact-us', component: ContactUsPageComponent },
   { path: 'javascript', component: JavascriptComponent },
+  { path: 'project/detail/:name', component: ProjectDetailComponent },
   { path: '**', component: NotFoundPageComponent }
 ];
 
