@@ -5,16 +5,16 @@ import { Skill } from '../../../../models/skill';
 // from skill level ( DEDUCT 15 ), example, if your skill level is 60% then 60 - 15 = 45%, 
 // This is because of CSS style.
 export const SKILLS: Skill[] = [
-  {
-    name: 'html',
-    skillLevel: 55,
-    missingSkills: 30
-  },
-  {
-    name: 'css',
-    skillLevel: 50,
-    missingSkills: 35
-  },
+  // {
+  //   name: 'html',
+  //   skillLevel: 55,
+  //   missingSkills: 30
+  // },
+  // {
+  //   name: 'css',
+  //   skillLevel: 50,
+  //   missingSkills: 35
+  // },
   {
     name: 'php',
     skillLevel: 70,
