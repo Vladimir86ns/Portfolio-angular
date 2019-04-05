@@ -166,11 +166,13 @@
         <div class="card mb-4 shadow-sm">
           <img class="img-thumbnail float-right" width="100%" height="225" [src]="leadTrekker" alt="Generic placeholder image">
           <div class="card-body">
-            <p class="text-center">LeadTrekker</p>
-            <p class="card-text">React / Material-UI / Firebase</p>
+            <p class="text-center font-weight-bold">LeadTrekker</p>
+            <p class="card-text">
+              React / Material-UI / Firebase, testing how to
+              connect React with Firebase.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-gradient">View</button>
+                <button [routerLink]="['/project/detail', 'leadtrekker']" type="button" class="btn btn-gradient">View</button>
               </div>
             </div>
           </div>

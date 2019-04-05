@@ -33,6 +33,7 @@ import { NumbersComponent } from './pages/skills-page/javascript/components/java
 import { ProjectDetailComponent } from './pages/projects-page/project-detail/project-detail.component';
 import { ProjectDetailSalariumComponent } from './pages/projects-page/project-detail/project-detail-salarium/project-detail-salarium.component';
 import { ProjectDetailMeridianComponent } from './pages/projects-page/project-detail/project-detail-meridian/project-detail-meridian.component';
+import { ProjectDetailTestLeadtrackkerComponent } from './pages/projects-page/project-detail/test/project-detail-test-leadtrackker/project-detail-test-leadtrackker.component';
 
 /**
  * Import every language you wish to highlight here
@@ -65,7 +66,8 @@ export function highlightLanguages() {
     NumbersComponent,
     ProjectDetailComponent,
     ProjectDetailSalariumComponent,
-    ProjectDetailMeridianComponent
+    ProjectDetailMeridianComponent,
+    ProjectDetailTestLeadtrackkerComponent
   ],
   imports: [
     BrowserModule,
