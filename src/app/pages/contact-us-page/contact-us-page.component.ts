@@ -16,8 +16,7 @@ export class ContactUsPageComponent implements OnInit {
     'email': null,
     'name': null,
     'subject': null,
-    'message': null,
-
+    'message': null
   };
 
   staticAlertClosed : true;
