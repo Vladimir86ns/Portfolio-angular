@@ -35,6 +35,7 @@ import { ProjectDetailSalariumComponent } from './pages/projects-page/project-de
 import { ProjectDetailMeridianComponent } from './pages/projects-page/project-detail/project-detail-meridian/project-detail-meridian.component';
 import { ProjectDetailTestLeadtrackkerComponent } from './pages/projects-page/project-detail/test/project-detail-test-leadtrackker/project-detail-test-leadtrackker.component';
 import { ProjectDetailTestBootstrapLandingPageOneComponent } from './pages/projects-page/project-detail/test/project-detail-test-bootstrap-landing-page-one/project-detail-test-bootstrap-landing-page-one.component';
+import { ReactLandingPageOneComponent } from './pages/projects-page/project-detail/my-projects/react-landing-page-one/react-landing-page-one.component';
 
 /**
  * Import every language you wish to highlight here
@@ -69,7 +70,8 @@ export function highlightLanguages() {
     ProjectDetailSalariumComponent,
     ProjectDetailMeridianComponent,
     ProjectDetailTestLeadtrackkerComponent,
-    ProjectDetailTestBootstrapLandingPageOneComponent
+    ProjectDetailTestBootstrapLandingPageOneComponent,
+    ReactLandingPageOneComponent
   ],
   imports: [
     BrowserModule,

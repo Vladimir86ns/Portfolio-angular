@@ -3,8 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-project-detail',
-  templateUrl: './project-detail.component.html',
-  styleUrls: ['./project-detail.component.scss']
+  templateUrl: './project-detail.component.html'
 })
 export class ProjectDetailComponent implements OnInit {
   name: string;
